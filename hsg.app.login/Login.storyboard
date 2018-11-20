@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -13,6 +12,10 @@
         <scene sceneID="dEt-K7-SWi">
             <objects>
                 <viewController storyboardIdentifier="LoginViewController" id="BsK-6z-ksg" customClass="LoginViewController" customModule="hsg_app_login" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Qbd-St-s54"/>
+                        <viewControllerLayoutGuide type="bottom" id="KwQ-vO-LnB"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="zZ6-Vj-r35">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -21,7 +24,7 @@
                                 <rect key="frame" x="168.5" y="301" width="38" height="30"/>
                                 <state key="normal" title="Login"/>
                                 <connections>
-                                    <action selector="loginPressedWithSender:" destination="BsK-6z-ksg" eventType="touchUpInside" id="edY-6U-oB9"/>
+                                    <action selector="loginPressed:" destination="BsK-6z-ksg" eventType="touchUpInside" id="JfL-CD-lGz"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Zv4-by-Pec">
@@ -76,17 +79,17 @@
                         <constraints>
                             <constraint firstItem="YYV-kk-kYQ" firstAttribute="centerX" secondItem="zZ6-Vj-r35" secondAttribute="centerX" id="rZD-D0-5ba"/>
                             <constraint firstItem="Zv4-by-Pec" firstAttribute="centerX" secondItem="zZ6-Vj-r35" secondAttribute="centerX" id="s3z-RC-RC7"/>
-                            <constraint firstItem="Zv4-by-Pec" firstAttribute="top" secondItem="3wh-QW-IG9" secondAttribute="top" constant="100" id="uat-6E-SIv"/>
+                            <constraint firstItem="Zv4-by-Pec" firstAttribute="top" secondItem="Qbd-St-s54" secondAttribute="bottom" constant="100" id="uat-6E-SIv"/>
                             <constraint firstItem="YYV-kk-kYQ" firstAttribute="top" secondItem="Zv4-by-Pec" secondAttribute="bottom" constant="60" id="uoQ-jg-gMB"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="3wh-QW-IG9"/>
                     </view>
                     <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="boolean" keyPath="fullscreen" value="YES"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="fullscreen" value="NO"/>
                     </userDefinedRuntimeAttributes>
                     <connections>
                         <outlet property="passwordTextField" destination="Ddt-Zb-94m" id="EwO-K5-o8b"/>
                         <outlet property="userNameTextField" destination="2il-Sh-7z3" id="Q8A-Fg-ke5"/>
+                        <segue destination="acC-ka-e8p" kind="presentation" identifier="showDetail" id="ZFf-AS-GAl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bie-9B-Avp" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -96,7 +99,11 @@
         <!--Detail View Controller-->
         <scene sceneID="Lhz-PS-KAD">
             <objects>
-                <viewController id="acC-ka-e8p" customClass="DetailViewController" customModule="hsg_app_login" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="acC-ka-e8p" customClass="DetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Dg5-9X-N8i"/>
+                        <viewControllerLayoutGuide type="bottom" id="YxH-aj-eTF"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="xEK-g0-rgx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -133,7 +140,6 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="I8L-jL-yuf"/>
                     </view>
                     <connections>
                         <outlet property="countLabel" destination="PNo-6g-82x" id="lkb-o0-cbd"/>

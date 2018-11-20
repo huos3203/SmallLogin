@@ -8,17 +8,18 @@
 
 import UIKit
 import hsg_lib_Utils
+@objc(LoginViewController)
 class LoginViewController: UIViewController {
     @IBOutlet weak var userNameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
 //        self.source
         // Do any additional setup after loading the view.
         title = "Login"
     }
-    
-    @IBAction func loginPressed(sender: AnyObject) {
+    @objc (loginPressed:)
+     @IBAction func loginPressed(_ sender: Any) {
         
         if let userName = userNameTextField.text,
             let password = passwordTextField.text
@@ -30,7 +31,8 @@ class LoginViewController: UIViewController {
                 indicator.hide()
                 
                 if successful {
-                    self.performSegue(withIdentifier: "showDetail", sender: sender)
+                    self.dismiss(animated: true, completion: nil)
+//                    self.performSegue(withIdentifier: "showDetail", sender: sender)
                 } else {
                     switch error! {
                     case .EmptyUserName, .EmptyPassword:
@@ -46,7 +48,9 @@ class LoginViewController: UIViewController {
             fatalError("should not hit here")
         }
     }
-    
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        return false;
+    }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         (segue.destination as! DetailViewController).userName = userNameTextField.text
     }
