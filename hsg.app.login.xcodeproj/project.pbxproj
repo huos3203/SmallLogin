@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7F3766762BC115A8E7584C48 /* Pods_hsg_app_login.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA4349C305B89D215578A21B /* Pods_hsg_app_login.framework */; };
 		84F2EA66219BD3A8006AEF5F /* hsg_app_login.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F2EA5C219BD3A7006AEF5F /* hsg_app_login.framework */; };
 		84F2EA6B219BD3A8006AEF5F /* hsg_app_loginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F2EA6A219BD3A8006AEF5F /* hsg_app_loginTests.swift */; };
 		84F2EA6D219BD3A8006AEF5F /* hsg_app_login.h in Headers */ = {isa = PBXBuildFile; fileRef = 84F2EA5F219BD3A7006AEF5F /* hsg_app_login.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -38,7 +37,6 @@
 		84F2EA86219BD563006AEF5F /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		84F2EA8E219BDD34006AEF5F /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		8C4CE44E900EE4DD07BBCB86 /* Pods-hsg.app.login.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hsg.app.login.release.xcconfig"; path = "../../../../Pods/Target Support Files/Pods-hsg.app.login/Pods-hsg.app.login.release.xcconfig"; sourceTree = "<group>"; };
-		CA4349C305B89D215578A21B /* Pods_hsg_app_login.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hsg_app_login.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +44,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F3766762BC115A8E7584C48 /* Pods_hsg_app_login.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,7 +61,6 @@
 		4F6C4CF94E76762CDBD8D2C4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CA4349C305B89D215578A21B /* Pods_hsg_app_login.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
