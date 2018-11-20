@@ -8,17 +8,17 @@
 
 import UIKit
 import hsg_lib_Utils
-@objc(LoginViewController)
+//@objc(LoginViewController)
 class LoginViewController: UIViewController {
     @IBOutlet weak var userNameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
-    public override func viewDidLoad() {
+    override func viewDidLoad() {
         super.viewDidLoad()
 //        self.source
         // Do any additional setup after loading the view.
         title = "Login"
     }
-    @objc (loginPressed:)
+//    @objc (loginPressed:)
      @IBAction func loginPressed(_ sender: Any) {
         
         if let userName = userNameTextField.text,
