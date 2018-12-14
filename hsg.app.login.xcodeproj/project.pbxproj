@@ -36,7 +36,6 @@
 		84F2EA84219BD54F006AEF5F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		84F2EA86219BD563006AEF5F /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		84F2EA8E219BDD34006AEF5F /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		8C4CE44E900EE4DD07BBCB86 /* Pods-hsg.app.login.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hsg.app.login.release.xcconfig"; path = "../../../../Pods/Target Support Files/Pods-hsg.app.login/Pods-hsg.app.login.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,7 +109,6 @@
 		FB0411A08BF268372DB4992C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				8C4CE44E900EE4DD07BBCB86 /* Pods-hsg.app.login.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -401,7 +399,6 @@
 		};
 		84F2EA72219BD3A8006AEF5F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8C4CE44E900EE4DD07BBCB86 /* Pods-hsg.app.login.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
