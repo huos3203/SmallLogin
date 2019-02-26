@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>94</integer>
 		</dict>
+		<key>hsg.app.login.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>237</integer>
+		</dict>
 	</dict>
 </dict>
 </plist>
