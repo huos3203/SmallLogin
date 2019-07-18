@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8404EC7622E028C400F25B6D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F2EA84219BD54F006AEF5F /* LoginViewController.swift */; };
 		84F2EA66219BD3A8006AEF5F /* hsg_app_login.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F2EA5C219BD3A7006AEF5F /* hsg_app_login.framework */; };
 		84F2EA6B219BD3A8006AEF5F /* hsg_app_loginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F2EA6A219BD3A8006AEF5F /* hsg_app_loginTests.swift */; };
 		84F2EA6D219BD3A8006AEF5F /* hsg_app_login.h in Headers */ = {isa = PBXBuildFile; fileRef = 84F2EA5F219BD3A7006AEF5F /* hsg_app_login.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		84F2EA85219BD54F006AEF5F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F2EA84219BD54F006AEF5F /* LoginViewController.swift */; };
 		84F2EA87219BD563006AEF5F /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F2EA86219BD563006AEF5F /* Login.storyboard */; };
 		84F2EA8F219BDD34006AEF5F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F2EA8E219BDD34006AEF5F /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
@@ -221,7 +221,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84F2EA85219BD54F006AEF5F /* LoginViewController.swift in Sources */,
+				8404EC7622E028C400F25B6D /* LoginViewController.swift in Sources */,
 				84F2EA8F219BDD34006AEF5F /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -379,6 +379,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(CONFIGURATION_BUILD_DIR)/**";
 				INFOPLIST_FILE = hsg.app.login/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -391,7 +392,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -408,6 +409,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(CONFIGURATION_BUILD_DIR)/**";
 				INFOPLIST_FILE = hsg.app.login/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -419,7 +421,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -438,7 +440,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "hsg.com.hsg-app-loginTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -457,7 +459,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "hsg.com.hsg-app-loginTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
