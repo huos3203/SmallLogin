@@ -13,6 +13,7 @@
 		84F2EA6D219BD3A8006AEF5F /* hsg_app_login.h in Headers */ = {isa = PBXBuildFile; fileRef = 84F2EA5F219BD3A7006AEF5F /* hsg_app_login.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		84F2EA87219BD563006AEF5F /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F2EA86219BD563006AEF5F /* Login.storyboard */; };
 		84F2EA8F219BDD34006AEF5F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F2EA8E219BDD34006AEF5F /* DetailViewController.swift */; };
+		AF5492C5EFDAA29DE877AA17 /* Pods_hsg_app_login.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5ED2BCD77ABD827F9A0385BF /* Pods_hsg_app_login.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5ED2BCD77ABD827F9A0385BF /* Pods_hsg_app_login.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hsg_app_login.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84F2EA5C219BD3A7006AEF5F /* hsg_app_login.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = hsg_app_login.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84F2EA5F219BD3A7006AEF5F /* hsg_app_login.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hsg_app_login.h; sourceTree = "<group>"; };
 		84F2EA60219BD3A7006AEF5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -35,6 +37,8 @@
 		84F2EA84219BD54F006AEF5F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		84F2EA86219BD563006AEF5F /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		84F2EA8E219BDD34006AEF5F /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		96DD465F2FE72490990827D9 /* Pods-hsg.app.login.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hsg.app.login.release.xcconfig"; path = "../../../Pods/Target Support Files/Pods-hsg.app.login/Pods-hsg.app.login.release.xcconfig"; sourceTree = "<group>"; };
+		A076B09039F9BEB363AE690D /* Pods-hsg.app.login.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hsg.app.login.debug.xcconfig"; path = "../../../Pods/Target Support Files/Pods-hsg.app.login/Pods-hsg.app.login.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF5492C5EFDAA29DE877AA17 /* Pods_hsg_app_login.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +64,7 @@
 		4F6C4CF94E76762CDBD8D2C4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5ED2BCD77ABD827F9A0385BF /* Pods_hsg_app_login.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -107,6 +113,8 @@
 		FB0411A08BF268372DB4992C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
+				A076B09039F9BEB363AE690D /* Pods-hsg.app.login.debug.xcconfig */,
+				96DD465F2FE72490990827D9 /* Pods-hsg.app.login.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -129,6 +137,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84F2EA70219BD3A8006AEF5F /* Build configuration list for PBXNativeTarget "hsg.app.login" */;
 			buildPhases = (
+				82C1B04EA2074D674B27AD8A /* [CP] Check Pods Manifest.lock */,
 				84F2EA57219BD3A7006AEF5F /* Headers */,
 				84F2EA58219BD3A7006AEF5F /* Sources */,
 				84F2EA59219BD3A7006AEF5F /* Frameworks */,
@@ -215,6 +224,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		82C1B04EA2074D674B27AD8A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-hsg.app.login-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		84F2EA58219BD3A7006AEF5F /* Sources */ = {
@@ -369,6 +403,7 @@
 		};
 		84F2EA71219BD3A8006AEF5F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A076B09039F9BEB363AE690D /* Pods-hsg.app.login.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -399,6 +434,7 @@
 		};
 		84F2EA72219BD3A8006AEF5F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96DD465F2FE72490990827D9 /* Pods-hsg.app.login.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
